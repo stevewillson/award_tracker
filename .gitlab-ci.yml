@@ -10,7 +10,7 @@ build_award_tracker:
     - echo "Installing dependencies"
     - npm install
     - echo "Building the app"
-    - npm run build
+    - CI='' npm run build
     - echo "Generating single file at ./build/"
     - npx gulp
     - echo "Configuring ssh key for deployment"
@@ -31,7 +31,7 @@ build_dev_award_tracker:
     - echo "Installing dependencies"
     - npm install
     - echo "Building the app"
-    - npm run build
+    - CI='' npm run build
     - echo "Generating single file at ./build/"
     - npx gulp
     - echo "Configuring ssh key for deployment"
